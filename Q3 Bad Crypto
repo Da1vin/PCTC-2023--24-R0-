@@ -1,0 +1,13 @@
+word = input()
+decrypted_word = ''
+character = []
+for char in word:
+  character.append(char)
+
+character = character + character[0:4] 
+character = character[4:]
+
+for i in character:
+    decrypted_word += i
+
+print(decrypted_word)
